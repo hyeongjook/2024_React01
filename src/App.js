@@ -1,4 +1,5 @@
 import './App.css';
+import CourseListCard from './components/course/CourseListCard';
 import Library from './components/step01/Library';
 
 /* function Header() {
@@ -36,7 +37,7 @@ function Counter() {
 function App() {
   return (
     <div className=''>
-        <Library />
+        <CourseListCard />
 
     </div>
   );
