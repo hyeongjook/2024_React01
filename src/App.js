@@ -1,6 +1,5 @@
 import './App.css';
-import Courseitem from './components/course/Courseitem';
-import CourseListCard from './components/course/CourseListCard';
+import Library from './components/step01/Library';
 
 /* function Header() {
   return(
@@ -36,9 +35,10 @@ function Counter() {
 // class 대신 className=''이라고 사용한다.
 function App() {
   return (
-    <main>
-        <CourseListCard />
-    </main>
+    <div className=''>
+        <Library />
+
+    </div>
   );
 }
 
