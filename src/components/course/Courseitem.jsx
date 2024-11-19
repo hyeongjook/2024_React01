@@ -1,6 +1,6 @@
 import React from "react";
 
- function Courseitem(props) {
+ // function Courseitem(props) {
 	// 방법1
   /* const title = '입문자를 위한, HTML&CSS 웹 개발 입문';
   const description = '웹 개발에 필요한 기본 지식을 배웁니다.';
@@ -8,15 +8,15 @@ import React from "react";
   const alt = '강의 이미지'; */
 
   // 방법2
-  const course = {
+/*   const course = {
 		title : '입문자를 위한, HTML&CSS 웹 개발 입문',
 		description : '웹 개발에 필요한 기본 지식을 배웁니다.',
 		image : './img/bg-light.jpg',
 		alt : '강의 이미지' 
 
-  } 
+  }  */
 
-	 return (
+//	 return (
 		// 방법1
 	//	<article className="course">
 	//		<img className="course_img" src={image} alt={alt} style={{width: "100px"}} />
@@ -27,7 +27,7 @@ import React from "react";
 	//	</article>
 
 	// 방법2
-	  <article className="course">
+/* 	  <article className="course">
 		<img className="course_img" src={course.image} alt={course.alt} style={{width: "100px"}} />
 		<div className="course_body">
 			<div className="course_title">{course.title}</div>
@@ -39,11 +39,21 @@ import React from "react";
 
 	);
 }
- 
+  */
 
 
-
-
+// props의 구조할당 : props로 받지 않고 속성 그대로 받기
+function Courseitem({title, description, image}) {
+	return(
+		<article className="course">
+		<img className="course_img" src={image} alt='강의이미지' style={{width: "100px"}} />
+		<div className="course_body">
+			<div className="course_title">{title}</div>
+			<div className="course_description">{description}</div>
+			</div>
+	</article>  
+	);
+}
 
 
 export default Courseitem;
