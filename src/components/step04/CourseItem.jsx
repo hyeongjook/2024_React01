@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Courseitem({title, description, image}) {
+function CourseItem({title, description, image}) {
 	return(
 		<article className="course">
 		<img className="course_img" src={image} alt='강의이미지' style={{width: "100px"}} />

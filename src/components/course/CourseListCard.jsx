@@ -1,5 +1,3 @@
-import React from "react";
-import Courseitem from "./Courseitem";
 
 
 function CourseListCard() {
